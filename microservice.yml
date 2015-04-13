@@ -1,0 +1,19 @@
+microservice:
+  spec_version: '2.0'
+  name: 'forever'
+  description: 'runs for 10 minutes and returns true'
+  docker_image: 'imightbeinatree/forever'
+  docker_image_tag: '0.1'
+  repo_url: 'https://github.com/imightbeinatree/docker-forever'
+  docker_hub_url: 'https://registry.hub.docker.com/u/imightbeinatree/forever/'
+  category: 'sleep'
+  tags: ['sleep', 'wait', 'hold']
+  developer_name: 'imbiat'
+  developer_type: 'User'
+  published: true
+  command: '/usr/local/bin/ruby -rubygems /run.rb'
+  inputs: []
+  outputs:
+    value:
+      param_type: 'Boolean'
+      description: 'always returns true'
